@@ -14,7 +14,7 @@
     background-color: #1D428A;
     color: #ffc72c;
     font-family: 'Montserrat', sans-serif; 
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
   }
   /* Navbar */
   .header {
@@ -35,7 +35,7 @@
       font-family: 'Logo Font', cursive;
   }
 
-  .header nav ul{
+  .nav-links{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -43,10 +43,16 @@
     width: 50%;
     gap: 3rem;
   }
-  .nav-links a {
-    text-decoration: none; /* retirando o sublinhado do link */
-    color: #1D428A;
-  }
+    .nav-links a {
+      text-decoration: none; /* retirando o sublinhado do link */
+      color: #1D428A;
+    }
+
+    .nav-links a:hover {
+      border-bottom: 1px solid #1D428A; /* Adicionando uma borda inferior ao passar o mouse */
+      transition: border 0.5s ease;
+    }
+
   
   /* Hero */
   .hero {
